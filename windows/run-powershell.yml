@@ -2,10 +2,11 @@
 # This playbook tests the script module on Windows hosts
 - name: set the default shell to PowerShell
   hosts: all
-  
-  win_regedit:
-    path: HKLM:\SOFTWARE\OpenSSH
-    name: DefaultShell
-    data: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
-    type: string
-    state: present
+  tasks:
+    - name: Perform Win Regedit Task
+      ansible.windows.win_regedit:
+        path: HKLM:\SOFTWARE\OpenSSH
+        name: DefaultShell
+        data: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
+        type: string
+        state: present
