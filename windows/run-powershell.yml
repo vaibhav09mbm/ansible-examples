@@ -1,6 +1,8 @@
 ---
 # This playbook tests the script module on Windows hosts
 - name: set the default shell to PowerShell
+  hosts: all
+  
   win_regedit:
     path: HKLM:\SOFTWARE\OpenSSH
     name: DefaultShell
