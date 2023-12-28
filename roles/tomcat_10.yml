@@ -1,0 +1,6 @@
+- name: Install Tomcat 10
+  hosts: all
+  roles:
+     -  role: tomcat10install
+        vars:
+          tomcat_location: /
