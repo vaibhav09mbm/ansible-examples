@@ -6,5 +6,5 @@
 
 - src: https://github.com/tomhac3k/tomcat10install.git
   scm: git
-  version: master
+  version: main
   name: tomhac3k.tomcat10install
