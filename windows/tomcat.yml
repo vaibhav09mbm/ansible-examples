@@ -2,4 +2,4 @@
 - name: Ping 
   hosts: all 
   roles:
-    - role: 'role-tomcat'
+    - role: 'roles/role-tomcat'
