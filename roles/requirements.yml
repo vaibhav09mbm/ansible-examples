@@ -3,3 +3,8 @@
   scm: git
   version: master
   name: zaxos.tomcat-ansible-role
+
+- src: https://github.com/tomhac3k/tomcat10install.git
+  scm: git
+  version: master
+  name: tomhac3k.tomcat10install
