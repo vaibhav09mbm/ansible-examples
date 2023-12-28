@@ -1,5 +1,5 @@
 ---    
-- src: https://github.com/criecm/ansible-role-tomcat.git
+- src: https://github.com/zaxos/tomcat-ansible-role.git
   scm: git
   version: master
-  name: role-tomcat
+  name: zaxos.tomcat-ansible-role
