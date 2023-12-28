@@ -1,0 +1,5 @@
+---    
+- src: https://github.com/criecm/ansible-role-tomcat.git
+  scm: git
+  version: master
+  name: role-tomcat
