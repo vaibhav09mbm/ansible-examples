@@ -1,3 +1,5 @@
 ---
-roles:
+- name: Ping 
+  hosts: all 
+  roles:
     - role: 'role-tomcat'
