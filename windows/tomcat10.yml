@@ -1,6 +1,6 @@
 ---
 - name: Install Tomcat 10
-  hosts: docker
+  hosts: all
   roles:
      -  role: tomhac3k.tomcat10install
         vars:
