@@ -1,0 +1,16 @@
+---
+- name: Manage Docker Container
+  hosts: all
+  gather_facts: false
+
+  tasks:
+    - name: Start Docker Container
+      ansible.builtin.docker_container:
+        name: ubuntu  # Replace with your actual container name
+        image: ununtu     # Replace with your actual Docker image name
+        state: started
+
+    - name: Execute Commands in Docker Container
+      ansible.builtin.docker_exec:
+        container: ubuntu  # Replace with your actual container name
+        cmd: echo "Hello from Ansible inside Docker"
